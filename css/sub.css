@@ -1,0 +1,250 @@
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+body {background-color: #fff; color: #333;
+  font-family: 'Noto Sans KR', sans-serif;}
+body * {box-sizing: border-box;}
+
+/* 클리어픽스 */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.lt {
+  float: left;
+}
+
+.rt {
+  float: right;
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+}
+.banner-wrap .banner {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+.img-wrap {
+  width: 1400px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #F7F2EC;
+}
+
+
+#logo {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 250px;
+}
+
+#nav-1 {
+  position: absolute;
+  right: 50px;
+  top: 35px; 
+  width: 500px;
+}
+
+#gnb-1 li:nth-child(4) {
+  position: absolute;
+  right: 0;
+}
+#gnb-1 li:nth-child(3) {
+  position: absolute;
+  right: 60px;
+}
+#gnb-1 li:nth-child(2) {
+  position: absolute;
+  right: 140px;
+}
+#gnb-1 li:nth-child(1) {
+  position: absolute;
+  right: 245px;
+}
+ 
+#gnb-1 li {
+ /*  font-weight: bold; */
+  font-size: 15px;
+}
+
+#nav-2 {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  height: 20px;
+}
+
+#gnb-2 li {
+  width: 25%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#gnb-2 li:hover {
+  font-size: 19px;
+  transition: all 0.2s;
+}
+
+@keyframes fade {
+  0% { top: -100%; }
+  100% { top: 0;}
+}
+
+
+.qmn.sticky {
+  position: absolute;
+ background-color: #fff;
+ width: 100%;
+ height: 100px;
+ top: 0;
+ animation: fade 0.6s linear forwards;
+}
+
+.cg {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.ct {
+  padding: 50px 0;
+}
+.ct li {
+  padding-right: 10px;
+}
+.stt {
+  font-size: 30px;
+  padding: 50px 0;
+}
+
+.pn {
+  padding-top: 50px;
+}
+.ar-wrap {
+  padding-top : 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #999;
+}
+
+.ar-wrap .ar li {
+  padding: 0 20px;
+  border-right: 1px solid #999;
+}
+.ar-wrap .ar li:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+.sq-wrap {
+  padding-left: 80px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.more {
+  text-align: center;
+  height: 100px;
+}
+.more a {
+  border: 1px solid;
+  padding: 5px;
+}
+
+.more a:hover {
+  background-color: #F7F2EC;
+  border: 1px solid #F7F2EC;
+}
+
+.img-wrap .img li {
+  padding: 30px;
+}
+
+.img-wrap .img li p:nth-child(2) {
+  border-bottom: 1px solid #999;
+}
+
+.banner-wrap .banner li {
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.banner-wrap .banner li img {
+  width: 100%;
+}
+.footer {
+  text-align: center;
+  padding: 40px;
+}
+
+#top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(30, 30, 30, 0.3);;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  transition: all 0.6s;
+}
+
+#top:hover { background-color: #a6dfd8}
+
+.footer .icon {
+  padding-bottom: 20px;
+}
+.footer .icon i {
+  padding: 10px;
+}
+.footer .icon a:hover i {
+  color: #a6dfd8;
+  transition: all 0.2s;
+}
+.footer .list {
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+}
+.footer .list div {
+  width: 33.3333%;
+  font-weight: bold;
+}
+.footer .list div a {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: normal;
+  padding: 5px;
+  height: 30px;
+}
+.footer .list div a:first-child {
+  padding-top: 20px;
+  height: 45px;
+}
+.footer .list div a:hover {
+  font-size: 0.93rem;
+  transition: all 0.4s;
+}
+
+.footer .list div:hover {
+  color: #81D8D0;
+}
